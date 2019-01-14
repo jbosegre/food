@@ -1,0 +1,13 @@
+{
+  "name": "jbosegre/IT328_2019/food",
+  "authors": [
+    {
+      "name": "Jarod Bose",
+      "email": "jbose@mail.greenriver.edu"
+    }
+  ],
+  "require":
+  {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
