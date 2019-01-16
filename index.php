@@ -38,6 +38,17 @@ $f3->route('GET /lunch', function(){
     echo $view->render('view/lunch.html');
 });
 
+//define pancakes route
+$f3->route('GET /breakfast/pancakes', function(){
+    $view = new View;
+    echo $view->render('view/pancakes.html');
+});
+
+$f3->route('GET /@meal/@food', function($f3, $params){
+    print_r($params);
+    echo "<h3>I Like " . $params['food'] . " for " . $params["meal"] . "</h3>";
+});
+
 //Run fat Free
 $f3->run();
 
